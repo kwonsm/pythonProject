@@ -1,0 +1,5 @@
+a=int(input("a를 입력하세요> "))
+b=int(input("b를 입력하세요> "))
+print(str(a)+"를",str(b)+"로 나누었을 때의")
+print("- 몫:",a//b)
+print("- 나머지:", a%b)
