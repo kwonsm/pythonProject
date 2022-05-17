@@ -1,14 +1,14 @@
 stack_capacity = 5
 
 
-def top(lista):
+def top(lista=[]):
     if len(lista) == 0:
         print("빈 리스트입니다.")
     else:
         print("top:", lista[len(lista)-1])
 
 
-def push(lista, data):
+def push(data, lista=[]):
     if len(lista) == stack_capacity:
         print("스택이 가득 찼습니다.")
         return lista
@@ -17,7 +17,7 @@ def push(lista, data):
         return lista
 
 
-def pop(lista):
+def pop(lista=[]):
     if len(lista) == 0:
         print("빈 스택입니다.")
         return lista
@@ -28,12 +28,12 @@ def pop(lista):
         return lista
 
 
-def printStatck(lista):
+def printStack(lista=[]):
     print(lista)
     if len(lista) == 0:
         print("스택이 비어있습니다.")
 
 
 if __name__ == "__main__":
-    test = [1,2,1,1,1]
-    print(len(test))
+    test = [1, 2, 1, 1, 1]
+    printStack(test)
