@@ -16,6 +16,7 @@ class Student:
     def to_string(self):
         return "{}\t {}\t {}\t".format(self.name, self.get_sum(), self.get_average())
 
+
 studentA = Student("unknown", 0, 0, 0, 0)
 
 students = [
@@ -25,6 +26,6 @@ students = [
 ]
 
 
-print("이름","총점", "평균", sep="\t")
+print("이름", "총점", "평균", sep="\t")
 for student in students:
     print(student.to_string())
